@@ -25,11 +25,11 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="mynaviSampleTable, status : ${mynaviSampleTables}">
+    <tr th:each="sampleTable, status : ${sampleTables}">
         <td th:text="${status.count}"></td>
-        <td th:text="${mynaviSampleTable.samplePartitionKey}"></td>
-        <td th:text="${mynaviSampleTable.sampleSortKey}"></td>
-        <td th:text="${mynaviSampleTable.sampleText}"></td>
+        <td th:text="${sampleTable.samplePartitionKey}"></td>
+        <td th:text="${sampleTable.sampleSortKey}"></td>
+        <td th:text="${sampleTable.sampleText}"></td>
     </tr>
     </tbody>
 </table>
