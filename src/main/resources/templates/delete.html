@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>DynamoDB Update</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="static/css/flex.css" media="(min-width: 1280px)" rel="stylesheet">
+    <link href="static/css/flex_mobile.css" media="(min-width: 320px) and (max-width: 767px)" rel="stylesheet">
+    <link href="static/css/flex_tablet.css" media="(min-width: 768px) and (max-width: 1279px)" rel="stylesheet">
+    <link href="static/css/delete.css" media="(min-width: 1280px)" rel="stylesheet">
+    <link href="static/css/delete_mobile.css" media="(min-width: 320px) and (max-width: 767px)" rel="stylesheet">
+    <link href="static/css/delete_tablet.css" media="(min-width: 768px) and (max-width: 1279px)" rel="stylesheet">
+    <script src="webjars/jquery/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<h1>Hello! DynamoDB delete sample!</h1>
+<p>Delete below table data.</p>
+<table>
+    <thead>
+    <tr>
+        <th>Partition Key</th>
+        <th>Sort Key</th>
+        <th>Text</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${mynaviSampleTable.samplePartitionKey}"></td>
+        <td th:text="${mynaviSampleTable.sampleSortKey}"></td>
+        <td th:text="${mynaviSampleTable.sampleText}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
