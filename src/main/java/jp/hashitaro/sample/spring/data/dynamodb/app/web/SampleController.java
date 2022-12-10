@@ -23,7 +23,7 @@ public class SampleController {
 
     @RequestMapping(method = RequestMethod.GET, value = "findOne")
     public String findOne(SampleModel sampleModel, Model model) {
-        model.addAttribute("sampleTables",
+        model.addAttribute("sampleTable",
                 sampleService.getSampleTable(
                         SampleModelMapper.mapToSampleTableKey(sampleModel)
                 ));
