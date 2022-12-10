@@ -45,10 +45,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.boostchicken/spring-data-dynamodb -->
 		<dependency>
-			<groupId>com.github.derjust</groupId>
+			<groupId>io.github.boostchicken</groupId>
 			<artifactId>spring-data-dynamodb</artifactId>
-			<version>5.1.0</version>
+			<version>5.2.5</version>
 		</dependency>
 	</dependencies>
 
